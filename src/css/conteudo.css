@@ -1,0 +1,97 @@
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.imagem.ativa{ 
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+}
+
+.informacoes .logo{
+    max-width: 350px;
+    filter: invert(1);
+    margin-bottom: 1%;
+    align-items: center;
+}
+
+.informacoes .descricao{
+    width: 60%;
+    font-family:  'Rubik', sans-serif;
+    font-size: 55px;
+    color: rgb(241, 238, 3);
+    line-height: 50px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+@media (max-width: 768px){
+.informacoes{
+    display: flex;
+    flex-direction: column;
+ }
+
+.informacoes .descricao{
+    display: flex;
+ }
+}
+
+@media screen and (max-width:540px ){
+.informacoes .descricao{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 15%;  
+    width: 10%;
+    font-size: 50px;
+ }
+.imagem.ativa{
+    min-height: 100%;
+ }
+}
+
+@media (max-width: 425px){
+ .conteudo{
+    min-height: 70vh;
+    gap: 50px;
+ }
+.logo{
+    margin-top: 5%;
+    margin-bottom: 5%;
+ }
+ .informacoes{
+    display: flex;
+ }
+.informacoes .descricao{
+    width: 100%;
+ }
+}
+@media screen and (max-width:414px ){
+.imagem.ativa{
+    width: 100%;
+    min-height: 100%;
+ } 
+ }
+
+@media screen and (max-width:360px ){
+.informacoes .descricao{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+ }
+}
+@media screen and (max-width: 280px){
+.informacoes .descricao{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 120vw;
+ }
+}
+

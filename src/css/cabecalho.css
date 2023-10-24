@@ -1,0 +1,47 @@
+.cabecalho{
+    padding: 2% 20% 2% 15%;
+    margin: 1% 25% 4% 2%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 90px;
+}
+
+.cabecalho__menu__link{
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 55px;
+    font-weight: 400;
+    color: rgb(237, 241, 8);
+    cursor: pointer; 
+}
+.cabecalho__menu__link:hover{
+    text-decoration:underline;
+}
+
+@media (min-width: 1000px){
+.cabecalho__menu{
+    gap: 280px;
+ }
+}
+
+@media (max-width: 768px){
+.cabecalho__menu__link{
+    margin-left: auto;
+ }
+}
+@media (min-width:750px ){
+.cabecalho__menu{
+   gap: 250px;
+   margin: auto;
+ }
+}
+
+@media (max-width: 540px){
+.cabecalho__menu__link{
+    display: flex;
+    align-items: center;
+    padding-right: 20%;
+ }
+}
+
